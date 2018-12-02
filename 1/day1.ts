@@ -18,18 +18,20 @@ export const findRepeatingFrequency = (
 
   changes
     .split(' ')
-    .map(change => parseInt(change))
-    .forEach(change => {
-      if (!found) {
-        frequency += change;
-      }
+    .map((change: string): number => parseInt(change))
+    .forEach(
+      (change: number): void => {
+        if (!found) {
+          frequency += change;
+        }
 
-      if (visitedFrequencies.indexOf(frequency) !== -1) {
-        found = true;
-      } else {
-        visitedFrequencies.push(frequency);
+        if (visitedFrequencies.indexOf(frequency) !== -1) {
+          found = true;
+        } else {
+          visitedFrequencies.push(frequency);
+        }
       }
-    });
+    );
 
   return findRepeatingFrequency(changes, frequency, visitedFrequencies, found);
 };
