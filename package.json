@@ -1,9 +1,7 @@
 {
   "name": "adventofcode2018",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Oyvind Moldestad <moldestad@gmail.com>",
-  "license": "MIT",
   "scripts": {
     "1": "jest 1/*.test.ts",
     "2": "jest 2/*.test.ts",
@@ -30,13 +28,11 @@
     "23": "jest 23/*.test.ts",
     "24": "jest 24/*.test.ts"
   },
-  "dependencies": {
-    "jest": "23.6.0",
-    "jest-each": "23.6.0"
-  },
   "devDependencies": {
     "@types/jest": "23.3.10",
     "ts-jest": "23.10.5",
-    "typescript": "3.2.1"
+    "typescript": "3.2.1",
+    "jest": "23.6.0",
+    "jest-each": "23.6.0"
   }
 }
